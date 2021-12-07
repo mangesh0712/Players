@@ -37,13 +37,13 @@ function App() {
         ? playerList
         : playerList.filter(
             (player) =>
-              player.PFName.toLowerCase().indexOf(val.trim().toLowerCase()) !=
+              player.PFName.toLowerCase().indexOf(val.trim().toLowerCase()) !==
               -1
           );
     var n = !filteredList.length
       ? playerList.filter(
           (player) =>
-            player.TName.toLowerCase().indexOf(val.trim().toLowerCase()) != -1
+            player.TName.toLowerCase().indexOf(val.trim().toLowerCase()) !== -1
         )
       : filteredList;
     setFilteredList(n);

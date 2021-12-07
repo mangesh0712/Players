@@ -5,7 +5,11 @@ function Player({ PFName, Id, Value, SkillDesc, UpComingMatchesList }) {
   return (
     <div className="bg-white rounded-sm shadow-md p-3 mx-4 sm:mx-40 md:mx-0">
       <div className="flex justify-center">
-        <img src={`/player-images/${Id}.jpg`} className=" h-60 w-60" />
+        <img
+          src={`/player-images/${Id}.jpg`}
+          alt="player"
+          className=" h-60 w-60"
+        />
       </div>
       <div className="w-full  rounded-sm h-28 my-2 px-7">
         <div className="subDataContainer">
